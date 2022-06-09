@@ -1,0 +1,37 @@
+{
+  "name": "portal",
+  "version": "0.1.0",
+  "description": "The gateway to all my other side projects.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "ts-node-dev --transpile-only --no-notify --exit-child src/index.ts",
+    "generate": "ts-node --transpile-only src/schema.ts",
+    "build": "npm run generate && tsc",
+    "start": "node dist/src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hamax97/portal.git"
+  },
+  "author": "Hamilton Tobon Mosquera",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hamax97/portal/issues"
+  },
+  "homepage": "https://github.com/hamax97/portal#readme",
+  "dependencies": {
+    "apollo-server": "^3.8.1",
+    "apollo-server-express": "^3.8.1",
+    "graphql": "^16.5.0",
+    "graphql-upload": "^15.0.1",
+    "nexus": "^1.3.0"
+  },
+  "devDependencies": {
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^4.7.2"
+  },
+  "engines": {
+    "node": "16.14.0"
+  }
+}
