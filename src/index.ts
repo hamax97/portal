@@ -7,6 +7,9 @@ import { schema } from "./schema";
 
 const port = process.env.PORT || 3000;
 
+/**
+ * Docs: https://www.apollographql.com/docs/apollo-server/data/file-uploads/
+ */
 async function startServer() {
   const server = new ApolloServer({
     schema,
